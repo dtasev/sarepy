@@ -1,0 +1,32 @@
+package:
+  name: sarepy
+  version: "2020.07"
+
+source:
+  git_url: ./
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - numpy
+    - scipy
+    - scikit-image
+    - pyfftw
+
+build:
+  number: 0
+  script:
+    - {{ PYTHON }} -m pip install .
+
+test:
+  imports:
+    - sarepy
+    - sarepy.prep
+
+about:
+  home: https://github.com/nghia-vo/sarepy
+  license: APACHE-2
+  license_file: LICENSE

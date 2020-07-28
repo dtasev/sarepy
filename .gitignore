@@ -6,3 +6,7 @@
 doc/build/
 doc/source/_static/
 doc/source/_templates/
+build/
+.vscode/
+dist/
+sarepy.egg-info/
