@@ -13,7 +13,6 @@ setup(
     install_requires=[
         "numpy",
         "scipy",
-        "scikit-image",
         "pyfftw",
     ],
     description="""Sarepy is the Python implementations
